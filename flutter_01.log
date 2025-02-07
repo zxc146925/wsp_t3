@@ -1,0 +1,67 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --machine --start-paused -d chrome --devtools-server-address http://127.0.0.1:9100/ --target /Users/appmycena/Desktop/wsp_t3/lib/main.dart -d chrome --web-port 8080
+
+## exception
+
+HttpException: HttpException: Connection closed before full header was received, uri = http://localhost:50900/json
+
+```
+```
+
+## flutter doctor
+
+```
+[!] Flutter (Channel stable, 3.24.1, on macOS 15.3 24D60 darwin-arm64, locale zh-Hant-TW)
+    • Flutter version 3.24.1 on channel stable at /Users/appmycena/fvm/versions/3.24.1
+    ! The flutter binary is not on your path. Consider adding /Users/appmycena/fvm/versions/3.24.1/bin to your path.
+    ! Warning: `dart` on your path resolves to /opt/homebrew/Cellar/dart/3.6.2/libexec/bin/dart, which is not inside your current Flutter SDK checkout at /Users/appmycena/fvm/versions/3.24.1. Consider adding /Users/appmycena/fvm/versions/3.24.1/bin to the front of your path.
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 5874a72aa4 (5 months ago), 2024-08-20 16:46:00 -0500
+    • Engine revision c9b9d5780d
+    • Dart version 3.5.1
+    • DevTools version 2.37.2
+    • If those were intentional, you can disregard the above warnings; however it is recommended to use "git" directly to perform update checks and upgrades.
+
+[!] Android toolchain - develop for Android devices (Android SDK version 35.0.1)
+    • Android SDK at /Users/appmycena/Library/Android/sdk
+    ✗ cmdline-tools component is missing
+      Run `path/to/sdkmanager --install "cmdline-tools;latest"`
+      See https://developer.android.com/studio/command-line for more details.
+    ✗ Android license status unknown.
+      Run `flutter doctor --android-licenses` to accept the SDK licenses.
+      See https://flutter.dev/to/macos-android-setup for more details.
+
+[✓] Xcode - develop for iOS and macOS (Xcode 16.2)
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Build 16C5032a
+    • CocoaPods version 1.16.2
+
+[✓] Chrome - develop for the web
+    • Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[✓] Android Studio (version 2024.2)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 21.0.4+-12422083-b607.1)
+
+[✓] VS Code (version 1.96.4)
+    • VS Code at /Users/appmycena/Downloads/Visual Studio Code.app/Contents
+    • Flutter extension version 3.102.0
+
+[✓] Connected device (3 available)
+    • macOS (desktop)                 • macos                 • darwin-arm64   • macOS 15.3 24D60 darwin-arm64
+    • Mac Designed for iPad (desktop) • mac-designed-for-ipad • darwin         • macOS 15.3 24D60 darwin-arm64
+    • Chrome (web)                    • chrome                • web-javascript • Google Chrome 132.0.6834.160
+
+[✓] Network resources
+    • All expected network resources are available.
+
+! Doctor found issues in 2 categories.
+```

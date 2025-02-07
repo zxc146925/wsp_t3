@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- 下載用 -->
+  <meta name="cross-origin-embedder-policy" content="require-corp" />
+  <meta name="cross-origin-opener-policy" content="same-origin-allow-popups" />
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ai_glasses">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>WSP_T3</title>
+  <link rel="manifest" href="manifest.json">
+  <script src="flutter_bootstrap.js" async></script>
+  <script>
+    window.addEventListener('wheel', (event) => {
+      if (event.deltaX < 0 || event.deltaX > 0) {
+        event.preventDefault(); // 禁止水平滾動觸發瀏覽器的返回/前進
+      }
+    });
+  </script>
+  <style>
+    /* 全局啟用文字選取 */
+    html,
+    body,
+    #flutter-container,
+    body * {
+      user-select: text !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <script src="flutter.js" defer></script> -->
+  <script>
+    window.addEventListener('load', () => {
+      document.body.style.userSelect = 'text';
+    });
+  </script>
+</body>
+
+</html>
